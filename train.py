@@ -15,7 +15,7 @@ def main():
         X, y, test_size=0.3, random_state=42
     )
 
-    model = RandomForestClassifier(max_depth=8, random_state=42)
+    model = RandomForestClassifier(max_depth=6, random_state=42)
     model.fit(X_train, y_train)
 
     score = model.score(X_test, y_test)          # ← вернули на место
